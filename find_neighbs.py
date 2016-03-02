@@ -41,6 +41,7 @@ def findOperons():
     return all_int_operons, mog_operons
 
 def countNeighbs(mog):
+# считаем появления каждого гена
     neighbs = {}
     for op in mog_operons[mog]:
         for gene in all_int_operons[op]:
