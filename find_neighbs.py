@@ -1,6 +1,6 @@
 import csv
 
-def listinterest_mogs():
+def listInterestMogs():
     interest_mog = {}
     f = open('rprots.txt')
     fr = csv.DictReader(f, delimiter='\t')
@@ -49,7 +49,7 @@ def countNeighbs(mog):
             neighbs[name] = neighbs.get(name, 0) + 1
     return neighbs
 
-interest_mog = listinterest_mogs()
+interest_mog = listInterestMogs()
 mog_names = makeMogNamesDict()
 all_int_operons, mog_operons = findOperons()
 
