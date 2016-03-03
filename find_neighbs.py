@@ -9,7 +9,7 @@ def listinterest_mogs():
     f.close()
     return interest_mog
 
-def makemog_namesDict():
+def makeMogNamesDict():
     mog_names = {}
     f = open('../info/allMOGShortNames.csv')
     fr = csv.DictReader(f, delimiter='\t')
@@ -50,7 +50,7 @@ def countNeighbs(mog):
     return neighbs
 
 interest_mog = listinterest_mogs()
-mog_names = makemog_namesDict()
+mog_names = makeMogNamesDict()
 all_int_operons, mog_operons = findOperons()
 
 for mog in interest_mog:
